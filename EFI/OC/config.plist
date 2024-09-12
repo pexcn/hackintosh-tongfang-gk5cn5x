@@ -646,7 +646,7 @@
 				<key>Comment</key>
 				<string>VoodooGPIO.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooGPIO</string>
 				<key>MaxKernel</key>
@@ -853,7 +853,7 @@
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
