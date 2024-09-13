@@ -632,7 +632,7 @@
 				<key>Comment</key>
 				<string>VoodooGPIO.kext</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooGPIO</string>
 				<key>MaxKernel</key>
