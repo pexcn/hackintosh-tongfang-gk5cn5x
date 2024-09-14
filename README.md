@@ -1,5 +1,7 @@
 # :green_apple: Hackintosh Tongfang GK5CN5X
 
+![OpenCore version](https://img.shields.io/badge/OpenCore-1.0.1-blue?style=flat-square&logo=circle) ![macOS version](https://img.shields.io/badge/macOS-Sonoma-green?style=flat-square&logo=apple)
+
 ## :computer: Specification
 
 | **Hardware**    | **Detail**                                          |
@@ -48,6 +50,12 @@
 
    # Umount EFI partition
    diskutil umount disk0s1
+   ```
+
+3. Additionals:
+
+   ```sh
+   # TODO
    ```
 
 ## :x: Not Working
