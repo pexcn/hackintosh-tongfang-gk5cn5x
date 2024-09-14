@@ -7,7 +7,7 @@
 | **Hardware**    | **Detail**                                          |
 | --------------- | --------------------------------------------------- |
 | **CPU**         | Intel Core i7-8750H Processor                       |
-| **GPU**         | Intel UHD Graphics 620 / NVIDIA GeForce GTX 1050 Ti |
+| **GPU**         | Intel UHD Graphics 630 / NVIDIA GeForce GTX 1050 Ti |
 | **RAM**         | Crucial 8GB 2666MHz DDR4 x 2                        |
 | **SSD**         | ZHITAI PC005 Active NVMe M.2 SSD                    |
 | **Chipset**     | Intel HM370 Chipset                                 |
