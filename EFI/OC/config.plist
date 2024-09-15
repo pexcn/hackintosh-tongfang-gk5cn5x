@@ -48,7 +48,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>_OSI override to return true through Windows 10 - requires _OSI to XOSI rename</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -149,7 +149,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>AAAAAA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
