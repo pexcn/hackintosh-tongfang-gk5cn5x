@@ -1,33 +1,60 @@
 //
-// For disabling the NVIDIA GPU
+// Disable NVIDIA GPU
 //
 DefinitionBlock ("", "SSDT", 2, "ACDT", "DDGPU", 0x00000000)
 {
     External (_SB_.PCI0.PEG0.PEGP._OFF, MethodObj)    // 0 Arguments
+    External (_SB_.PCI0.PEG0.PEGP._ON_, MethodObj)    // 0 Arguments
+    External (XPTS, MethodObj)    // 1 Arguments
+    External (ZWAK, MethodObj)    // 1 Arguments
 
-    Device (RMD1)
+    Method (_PTS, 1, NotSerialized)  // _PTS: Prepare To Sleep
     {
-        Name (_HID, "RMD10000")  // _HID: Hardware ID
+        // Turn on DGPU before sleeping to solve sleep issue
+        If (_OSI ("Darwin"))
+        {
+            \DGPU._ON ()
+        }
+
+        \XPTS (Arg0)
+    }
+
+    Method (_WAK, 1, NotSerialized)  // _WAK: Wake
+    {
+        If (_OSI ("Darwin"))
+        {
+            // Need to turn off DGPU before original _WAK()
+            \DGPU._OFF ()
+        }
+        // call into original _WAK method
+        Local0 = ZWAK (Arg0)
+
+        // return value from original _WAK
+        Return (Local0)
+    }
+
+    Device (DGPU)
+    {
+        Name (_HID, "DGPU1000")  // _HID: Hardware ID
+        Name (RMEN, One)
         Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
-            If (_OSI ("Darwin"))
+            _OFF ()
+        }
+
+        Method (_ON, 0, NotSerialized)  // _ON_: Power On
+        {
+            If (CondRefOf (\_SB.PCI0.PEG0.PEGP._ON))
             {
-                If (CondRefOf (\_SB.PCI0.PEG0.PEGP._OFF))
-                {
-                    \_SB.PCI0.PEG0.PEGP._OFF ()
-                }
+                \_SB.PCI0.PEG0.PEGP._ON ()
             }
         }
 
-        Method (_STA, 0, NotSerialized)  // _STA: Status
+        Method (_OFF, 0, NotSerialized)  // _OFF: Power Off
         {
-            If (_OSI ("Darwin"))
+            If (CondRefOf (\_SB.PCI0.PEG0.PEGP._OFF))
             {
-                Return (0x0F)
-            }
-            Else
-            {
-                Return (Zero)
+                \_SB.PCI0.PEG0.PEGP._OFF ()
             }
         }
     }
