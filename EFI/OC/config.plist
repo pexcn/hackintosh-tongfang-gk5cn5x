@@ -81,7 +81,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Change PNLF to XNLF</string>
+				<string>PNLF: Change PNLF to XNLF</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -111,7 +111,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Change _OSI to XOSI</string>
+				<string>XOSI: Change _OSI to XOSI</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -141,7 +141,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>HPET Change _STA to XSTA</string>
+				<string>HPET: Change _STA to XSTA</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -171,7 +171,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>HPET Change _CRS to XCRS</string>
+				<string>HPET: Change _CRS to XCRS</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -201,7 +201,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>IPIC IRQ 2 Patch</string>
+				<string>HPET: IPIC IRQ 2 Patch</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -231,7 +231,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>RTC IRQ 8 Patch</string>
+				<string>HPET: RTC IRQ 8 Patch</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -261,7 +261,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>TIMR IRQ 0 Patch</string>
+				<string>HPET: TIMR IRQ 0 Patch</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
