@@ -4,3 +4,6 @@
 - https://github.com/acidanthera/AppleALC/blob/master/Resources/ALC269/Info.plist
 - https://dortania.github.io/OpenCore-Post-Install/universal/drm.html
 - https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html
+- https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html
+- https://dortania.github.io/OpenCore-Post-Install/usb/misc/instant-wake.html
+- Security...
