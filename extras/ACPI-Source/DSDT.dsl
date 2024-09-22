@@ -11,7 +11,7 @@
  *     Signature        "DSDT"
  *     Length           0x0003BAD7 (244439)
  *     Revision         0x02
- *     Checksum         0xA7
+ *     Checksum         0xFC
  *     OEM ID           "ALASKA"
  *     OEM Table ID     "A M I "
  *     OEM Revision     0x01072009 (17244169)
@@ -228,7 +228,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Name (TPMC, 0xFFFFFFFF)
     Name (TPMM, 0xFED40000)
     Name (FTPM, 0xFED40040)
-    Name (PPIM, 0x7A59BF98)
+    Name (PPIM, 0x7A5BAF98)
     Name (PPIL, 0x1C)
     Name (AMDT, Zero)
     Name (TPMF, One)
@@ -242,7 +242,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Name (TOPM, 0x00000000)
     Name (ROMS, 0xFFE00000)
     Name (VGAF, One)
-    OperationRegion (GNVS, SystemMemory, 0x7A490000, 0x0866)
+    OperationRegion (GNVS, SystemMemory, 0x7A4AF000, 0x0866)
     Field (GNVS, AnyAcc, Lock, Preserve)
     {
         OSYS,   16, 
@@ -1341,7 +1341,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         NVAF,   8
     }
 
-    Name (OWAD, 0x7A59B118)
+    Name (OWAD, 0x7A5BA118)
     Name (OWSZ, 0x002E)
     OperationRegion (OWGN, SystemMemory, OWAD, OWSZ)
     Field (OWGN, AnyAcc, Lock, Preserve)
@@ -1360,7 +1360,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         OUT5,   64
     }
 
-    OperationRegion (OGNS, SystemMemory, 0x7A59BA98, 0x0007)
+    OperationRegion (OGNS, SystemMemory, 0x7A5BAA98, 0x0007)
     Field (OGNS, AnyAcc, Lock, Preserve)
     {
         TPVD,   8, 
@@ -12754,7 +12754,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
         }
     }
 
-    Name (PNVB, 0x7A59BB98)
+    Name (PNVB, 0x7A5BAB98)
     Name (PNVL, 0x0290)
     OperationRegion (PNVA, SystemMemory, PNVB, PNVL)
     Field (PNVA, AnyAcc, Lock, Preserve)
@@ -52792,7 +52792,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
     Scope (_SB)
     {
         Name (UWSV, 0x02)
-        OperationRegion (UWNV, SystemMemory, 0x7A4C5018, 0x00070000)
+        OperationRegion (UWNV, SystemMemory, 0x7A4E4018, 0x00070000)
     }
 
     Scope (_SB.PCI0)
