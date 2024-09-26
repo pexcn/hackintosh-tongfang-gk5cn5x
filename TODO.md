@@ -7,4 +7,4 @@
 - https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html
 - https://dortania.github.io/OpenCore-Post-Install/usb/misc/instant-wake.html
 - https://dortania.github.io/OpenCore-Post-Install/misc/rtc.html
-- Security...
+- https://dortania.github.io/OpenCore-Post-Install/misc/nvram.html
