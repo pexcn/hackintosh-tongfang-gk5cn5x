@@ -33,7 +33,7 @@
 5. Chipset -> System Agent (SA) Configuration -> Above 4GB MMIO BIOS assignment -> `Enabled`
 6. Chipset -> System Agent (SA) Configuration -> Graphics Configuration -> DVMT Total Gfx Mem -> `MAX`
 
-## :hammer: Usage
+## :hammer_and_wrench: Usage
 
 1. Generate SMBIOS info and put it into `config.plist`.
 2. Put your EFI into EFI partition.
@@ -55,11 +55,22 @@
 3. Additionals:
 
    ```sh
-   # TODO
+   # Enable HiDPI (optional)
+   curl -sSL https://github.com/pexcn/hackintosh-tongfang-gk5cn5x/raw/master/extras/hidpi/enable.sh | sudo sh -
+
+   # Boost (optional)
+   curl -sSL https://github.com/pexcn/hackintosh-tongfang-gk5cn5x/raw/master/extras/voltageshift/enable.sh | sudo sh -
+
+   # Optimize (optional)
+   curl -sSL https://github.com/pexcn/hackintosh-tongfang-gk5cn5x/raw/master/extras/optimize/pmset.sh | sudo sh -
    ```
+
+## :rocket: Updating
+
+> [!IMPORTANT]
+> Before macOS updating, need to set `SecureBootModel` to `Disabled` and enable verbose logging.
 
 ## :x: Not Working
 
 - NVIDIA Graphics Card
-
-// TODO
+- Mass storage device icon in menu bar
