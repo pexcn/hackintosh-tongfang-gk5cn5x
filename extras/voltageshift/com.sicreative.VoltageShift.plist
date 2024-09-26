@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>RunAtLoad</key>
+		<true/>
+		<key>Label</key>
+		<string>com.sicreative.VoltageShift</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/bin/bash</string>
+			<string>-c</string>
+			<string>
+			  /usr/local/bin/voltageshift write 0x610 0x428258002D81E0
+			  /usr/local/bin/voltageshift wrmem 0xFED159A0 0x2D81E0
+			  /usr/local/bin/voltageshift wrmem 0xFED159A4 0x428258
+			  /usr/local/bin/voltageshift write 0x1AD 0x292929292929
+			</string>
+		</array>
+		<key>StartCalendarInterval</key>
+		<array>
+			<dict>
+				<key>Minute</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Minute</key>
+				<integer>10</integer>
+			</dict>
+			<dict>
+				<key>Minute</key>
+				<integer>20</integer>
+			</dict>
+			<dict>
+				<key>Minute</key>
+				<integer>30</integer>
+			</dict>
+			<dict>
+				<key>Minute</key>
+				<integer>40</integer>
+			</dict>
+			<dict>
+				<key>Minute</key>
+				<integer>50</integer>
+			</dict>
+		</array>
+	</dict>
+</plist>
