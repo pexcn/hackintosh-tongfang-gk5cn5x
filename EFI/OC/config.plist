@@ -447,6 +447,14 @@
 				<data>AACbPg==</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
+				<key>enable-backlight-smoother</key>
+				<data>AQAAAA==</data>
+				<key>backlight-smoother-steps</key>
+				<data>IwAAAA==</data>
+				<key>backlight-smoother-interval</key>
+				<data>BwAAAA==</data>
+				<key>backlight-smoother-threshold</key>
+				<data>LAEAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-fbmem</key>
